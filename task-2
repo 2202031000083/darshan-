@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datahub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <div class="bg-blue-800 text-white w-64 p-4 space-y-6">
+            <div class="flex items-center space-x-2">
+                <div class="bg-white text-blue-800 p-2 rounded-full">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l7 7-7 7"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-semibold">Datahub</h2>
+            </div>
+            <nav class="space-y-4">
+                <a href="#" class="block py-2 px-3 text-lg hover:bg-blue-700 rounded-md">Home</a>
+                <a href="#" class="block py-2 px-3 text-lg hover:bg-blue-700 rounded-md">Analytics</a>
+                <a href="#" class="block py-2 px-3 text-lg hover:bg-blue-700 rounded-md">Settings</a>
+                <a href="#" class="block py-2 px-3 text-lg hover:bg-blue-700 rounded-md">Support</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col">
+            <!-- Header -->
+            <header class="bg-white shadow-md p-4">
+                <div class="flex justify-between items-center">
+                    <div class="text-lg font-semibold text-gray-800">Datahub Overview</div>
+                    <div class="flex items-center space-x-4">
+                        <div class="text-gray-600">Hello, User!</div>
+                        <button class="text-gray-600 hover:text-blue-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Dashboard -->
+            <div class="flex-1 p-6 space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white shadow-lg p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800">Total Revenue</h3>
+                        <p class="text-2xl font-bold text-blue-800">$23,456</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-white shadow-lg p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800">Active Users</h3>
+                        <p class="text-2xl font-bold text-green-600">1,234</p>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="bg-white shadow-lg p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold text-gray-800">Orders</h3>
+                        <p class="text-2xl font-bold text-orange-600">654</p>
+                    </div>
+                </div>
+
+                <!-- Statistics and Graphs Section -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Monthly Overview</h3>
+                    <!-- Placeholder for a Graph (like Chart.js) -->
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <span class="text-gray-600">Graph/Chart Here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 
